@@ -43,23 +43,30 @@
             text-align: center;
             font-size: xx-large;
         }
-        .ashoka img{
+        .center img{
             width: auto;
             height: 100px;
+            position:absolute;
+            left: 150px;
+            animation: rotate 10s linear infinite;
         }
-        .ashoka{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        @keyframes rotate{
+        0%{
+            transform :rotate(0deg);
         }
+        100%{
+            transform :rotate(360deg);
+        }
+    }
+       
     </style>
 </head>
 <body>
     
     <section>
-        <h1> <marquee>!! India-Flag !! </marquee></h1>
+        <h1> <marquee>!!Happy Independence day!! </marquee></h1>
     <div class="top"></div>
-    <div class="center"><div class="ashoka"> <img src="./image/images.png " alt="ashoka"> </div></div>
+    <div class="center"> <img src="./image/ashok.png" alt="ashoka" > </div>
     <div class="bottom"></div>
     </section>
 
